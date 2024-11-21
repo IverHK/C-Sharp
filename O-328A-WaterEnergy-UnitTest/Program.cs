@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var water = new Water(10, 70);
+        water.AddEnergy(6400);
     }
 }
