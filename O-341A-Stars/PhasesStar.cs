@@ -1,6 +1,6 @@
 namespace O_341A_Stars;
 
-public class PhasesStar
+public class PhasesStar : IAllStars
 {
     private const string _phaseChars = " .x*x.";
     protected int _x;

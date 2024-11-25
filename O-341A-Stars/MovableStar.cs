@@ -1,6 +1,6 @@
 namespace O_341A_Stars;
 
-public class MovableStar 
+public class MovableStar : IAllStars
 {
     protected int _x;
     protected int _y;

@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O-328B-UnitTests", "O-328B-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O-341A-Stars", "O-341A-Stars\O-341A-Stars.csproj", "{37B17314-0EBA-4753-B77B-A15680352443}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O-341B-ClickerGame", "O-341B-ClickerGame\O-341B-ClickerGame.csproj", "{02002408-F28C-418F-A08B-97340140497D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,5 +122,9 @@ Global
 		{37B17314-0EBA-4753-B77B-A15680352443}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B17314-0EBA-4753-B77B-A15680352443}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B17314-0EBA-4753-B77B-A15680352443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02002408-F28C-418F-A08B-97340140497D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02002408-F28C-418F-A08B-97340140497D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02002408-F28C-418F-A08B-97340140497D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02002408-F28C-418F-A08B-97340140497D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
