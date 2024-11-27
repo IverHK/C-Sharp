@@ -9,7 +9,8 @@ class Program
 
     static async Task MainAsync()
     {
-        var generator = new JokeGenerator();
+        var chuckNorrisJokeApi = new ChuckNorrisJokeAPI();
+        var generator = new JokeGenerator(chuckNorrisJokeApi);
         while (true)
         {
             Console.Write("Hvilket ord vil du at vitsene skal ha to av? ");
