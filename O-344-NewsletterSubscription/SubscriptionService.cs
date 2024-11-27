@@ -17,44 +17,28 @@ namespace O_344_NewsletterSubscription
             _emailService = emailService;
         }
 
-        public void Subscribe(string emailAddress)
+        public void Subscribe(string emailAddress, DummyEmailService emailService, SubscriptionFileRepository subscriptionRepo)
         {
             var newUser = new Subscription("New User", emailAddress);
-            var subscriptionRepo = new SubscriptionFileRepository();
-            var emailService = new DummyEmailService();
             var email = new Email(newUser.Email, "info@getacademy.no", "Vertifikasjonskode", $"Vertifikasjonskoden er: {newUser.VerificationCode}");
-
-            Subscription existingUser = null;
             
-            
-            try
+            Subscription existingUser = subscriptionRepo.Load(emailAddress);
+            if (existingUser == null)
             {
-                existingUser = subscriptionRepo.Load(emailAddress);
-                if (existingUser != null && existingUser.Email == newUser.Email)
-                {
-                    Console.WriteLine($"Email {newUser.Email} is already subscribed.");
-                    return;
-                }
+                subscriptionRepo.Save(newUser);
+                emailService.Send(email);
+                Console.WriteLine(newUser);
             }
-            catch (Exception ex)
+            else if (existingUser != null)
             {
-                Console.WriteLine($"Error loading user: {ex.Message}");
+                Console.WriteLine($"Email {newUser.Email} is already subscribed.");
             }
-            
-            subscriptionRepo.Save(newUser);
-            emailService.Send(email);
-            Console.WriteLine(newUser);
         }
 
-        public void Verify(string emailAddress, string verificationCode)
+        public void Verify(string emailAddress, string verificationCode, DummyEmailService emailService, SubscriptionFileRepository subscriptionRepo)
         {
-            var newUser = new Subscription("New User", emailAddress);
-            var subscriptionRepo = new SubscriptionFileRepository();
-            var emailService = new DummyEmailService();
+            Subscription newUser = subscriptionRepo.Load(emailAddress);
             var email = new Email(newUser.Email, "info@getacademy.no", "Subscribed!", "Abonnementet på nyhetsbrev er startet");
-
-            newUser = subscriptionRepo.Load(emailAddress);
-            
             
             if (verificationCode == newUser.VerificationCode)
             {

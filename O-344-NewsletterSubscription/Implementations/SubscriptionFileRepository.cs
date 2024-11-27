@@ -17,6 +17,7 @@ namespace O_344_NewsletterSubscription.Implementations
         public Subscription Load(string email)
         {
             var filename = email + ".json";
+            if (!File.Exists(filename)) return null;
             var json = File.ReadAllText(filename);
             return JsonSerializer.Deserialize<Subscription>(json);
         }

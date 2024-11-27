@@ -42,6 +42,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O-341B-ClickerGame", "O-341
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O-344-NewsletterSubscription", "O-344-NewsletterSubscription\O-344-NewsletterSubscription.csproj", "{7A8B3572-FE43-4D4C-BC77-6362060B4305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O-345-LowCouplingToUnitTest", "O-345-LowCouplingToUnitTest\O-345-LowCouplingToUnitTest.csproj", "{DD03A1EC-7875-46C3-9531-5A8258D89103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O-345-UnitTest", "O-345-UnitTest\O-345-UnitTest.csproj", "{DAD35E6C-EC33-4ED7-B719-DE869248FE5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -132,5 +136,13 @@ Global
 		{7A8B3572-FE43-4D4C-BC77-6362060B4305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A8B3572-FE43-4D4C-BC77-6362060B4305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A8B3572-FE43-4D4C-BC77-6362060B4305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD03A1EC-7875-46C3-9531-5A8258D89103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD03A1EC-7875-46C3-9531-5A8258D89103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD03A1EC-7875-46C3-9531-5A8258D89103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD03A1EC-7875-46C3-9531-5A8258D89103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD35E6C-EC33-4ED7-B719-DE869248FE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD35E6C-EC33-4ED7-B719-DE869248FE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD35E6C-EC33-4ED7-B719-DE869248FE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD35E6C-EC33-4ED7-B719-DE869248FE5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
