@@ -1,12 +1,12 @@
 namespace O_348C_Chess;
 
-public class Rook : Piece
+internal class Rook : Piece
 {
-    public Rook(string symbol) : base(symbol)
+    internal Rook(string symbol) : base(symbol)
     {
     }
 
-    public override bool Move(string fromPosition, string toPosition)
+    internal override bool Move(string fromPosition, string toPosition)
     {
           return fromPosition[0] == toPosition[0] || fromPosition[1] == toPosition[1];
     }

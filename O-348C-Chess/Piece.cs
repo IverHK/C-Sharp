@@ -9,5 +9,5 @@ public abstract class Piece
         Symbol = symbol;
     }
 
-    public abstract bool Move(string fromPosition, string toPosition);
+    internal abstract bool Move(string fromPosition, string toPosition);
 }

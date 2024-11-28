@@ -10,7 +10,7 @@ namespace O_348C_Chess;
             else _pieces.Add(position, piece);
         }
 
-        public bool Move(string fromPosition, string toPosition)
+        internal bool Move(string fromPosition, string toPosition)
         {
             if (HasValue(toPosition) || !HasValue(fromPosition)) return false;
             var piece = _pieces[fromPosition];
