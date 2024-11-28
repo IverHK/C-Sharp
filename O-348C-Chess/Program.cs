@@ -9,8 +9,6 @@ class Program
         Console.OutputEncoding = Encoding.UTF8;
         
         var board = new Board();
-        // var bishop = new Piece("Bishop", "LPR");
-        // var rook = new Piece("Rook", "TRN");
         var bishop = new Bishop("\u2657");
         var rook = new Rook("\u265c");
         
