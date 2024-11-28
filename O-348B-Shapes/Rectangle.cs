@@ -2,8 +2,8 @@ namespace O_348B_Shapes;
 
 class Rectangle : Shape
 {
-    public int Width { get; private set; }
-    public int Height { get; private set; }
+    private int Width { get; set; }
+    private int Height { get; set; }
     private int _minimumSize = 3;
 
     public Rectangle(Random random, int maxX, int maxY)

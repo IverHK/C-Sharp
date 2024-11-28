@@ -2,8 +2,8 @@ namespace O_348B_Shapes;
 
  class Text : Shape
 {
- public string _text { get; }
- private int _minimumSize = 3;
+ private string _text { get; }
+ private readonly int _minimumSize = 3;
 
  
  public Text(Random random, string text, int maxX, int maxY) : base(random)

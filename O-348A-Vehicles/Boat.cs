@@ -2,8 +2,8 @@ namespace O_348A_Vehicles;
 
 public class Boat : Vehicle
 {
-    internal int _maxSpeed;
-    internal int _loadCapacity;
+    private readonly int _maxSpeed;
+    private readonly int _loadCapacity;
     
     public Boat(string registrationNumber, string effect, int maxSpeed, int loadCapacity) : base(registrationNumber, effect)
     {

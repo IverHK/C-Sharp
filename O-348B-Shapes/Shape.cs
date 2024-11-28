@@ -2,10 +2,10 @@ namespace O_348B_Shapes;
 
 abstract class Shape
 {
-    public int DirectionX { get; internal set; }
-    public int DirectionY { get; internal set; }
-    public int X { get; internal set; }
-    public int Y { get; internal set; }
+    private int DirectionX { get; set; }
+    private int DirectionY { get; set; }
+    protected int X { get; set; }
+    protected int Y { get; set; }
 
     protected Shape()
     {
